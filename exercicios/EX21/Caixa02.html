@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #253C59;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4d6676;
+            
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0px 10px;
+            margin: 0px 5px          
+        }
+        a:hover {
+            background-color: #5D7A8C;
+        }
+
+        main {
+            background-color: #BF8D30;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+        article {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        article > aside {
+            text-align: right;
+        }
+        cite {
+            color: #D9B70D;
+        }
+
+        .citacao:hover {
+            color: #D9B70D;
+            background-color: #BF8D30;
+        }
+
+        p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assunto">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi debitis excepturi similique ducimus eum veniam? Mollitia ducimus nulla ullam accusantium reprehenderit laboriosam dolorem cupiditate fuga officia unde, minima qui corporis.</p>
+                <aside>
+                    <p>Artigo escrito por <cite><a class="citacao" href="artigo.html">Geraldo Pedro</a></cite></p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Júnior Holanda</p>
+    </footer>
+</body>
+</html>

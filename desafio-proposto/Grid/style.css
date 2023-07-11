@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: pink;
+    text-decoration: none;
+    
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 70fr 10vh;
+   grid-template-areas: "header header"
+                        "main aside"
+                        "footer footer";
+
+}
+
+/**
+ATENÇÃO NO GRIDE-TEMPLATE-AREAS, AS "" DEVEM ABRIR NA PRIMEIRA COLUNA E FECHAR SOMENTE NA ÚLTIMA.
+**/
+
+
+/*Aqui começa o cabeçalho*/
+
+header {
+    background: #A61C35;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr
+    
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    color: white
+
+
+}
+
+.logo-icon {
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    border-radius: 200px;
+}
+
+.logo-icon:hover {
+    background-color: #A6882D;
+    transition: 0.3s;
+}
+
+.nav {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav > div {
+    display: flex;
+    color: white;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    
+
+
+
+}
+
+.nav > div:hover {
+    background-color: #A6882D;
+    transition: 0.3s;
+   
+
+}
+
+.find {
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.find > div {
+    background-color: #851227;
+    color: #A61C35;
+    width: 100px;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.find > div:hover {
+    background-color: #A6882D;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/*Aqui começa o conteúdo principal*/
+
+main {
+    background: #034C8C;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-areas: "titulo titulo"
+                        "foto foto"
+                        "conteudo conteudo"; 
+}
+
+.titulo {
+    color: rgb(203, 203, 203);
+    grid-area: titulo;
+}
+
+.foto {
+    
+    grid-area: foto;
+    background-image: url("https://pensarpiaui.com/media/image_bank/2022/5/bolsonaro.jpg.1200x0_q95_crop.jpg");
+    display: flex;
+    position: relative;
+   
+}
+
+
+
+.conteudo {
+
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "inele preso"
+                         "p-inele p-preso";
+}
+
+.inele {
+    grid-area: inele;
+    
+    
+}
+
+.p-inele {
+    grid-area: p-inele;
+    
+}
+
+.preso {
+    grid-area: preso;
+    
+}
+
+.p-preso {
+    grid-area: p-preso;
+
+}
+
+
+
+aside {
+    background: #03588C;
+    
+
+
+}
+
+footer {
+    background: #A6882D;
+    grid-area: footer;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

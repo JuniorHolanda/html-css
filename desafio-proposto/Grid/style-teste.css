@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    border: 5px rgb(0, 0, 0) solid;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+}
+
+.item {
+    background-color: deeppink;
+    width: 200px;
+}
